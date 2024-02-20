@@ -1,4 +1,4 @@
-# lab2-task4-digital-signatures
+# Lab 2 - Task 4: Digital Signatures Demo
 
 In this task, you will get a demonstration of digital signatures and how to generate key using OpenSSL library.
 
