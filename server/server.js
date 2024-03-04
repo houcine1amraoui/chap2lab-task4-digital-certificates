@@ -12,7 +12,10 @@ app.get("/public", async (req, res) => {
   const sign = crypto.createSign("RSA-SHA256");
   sign.update(originalServerPublicKey);
   const signedServerPublicKey = sign.sign(serverPrivateKey, "base64");
-  const certificate = { originalServerPublicKey, signedServerPublicKey };
+  const certificate = {
+    originalServerPublicKey,
+    signedServerPublicKey,
+  };
   res.send(certificate);
 });
 
